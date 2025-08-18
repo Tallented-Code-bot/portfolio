@@ -1,6 +1,6 @@
 <script lang="ts">
 	import favicon from '$lib/assets/favicon.svg';
-	import { page } from '$app/stores';
+	import { navigationItems, personalInfo } from '$lib/data/portfolio';
 
 	let { children } = $props();
 	let mobileMenuOpen = $state(false);
@@ -22,15 +22,14 @@
 <header class="header">
 	<nav class="nav">
 		<div class="nav-brand">
-			<a href="/">Your Name</a>
+			<a href="/">{personalInfo.name}</a>
 		</div>
 		<div class="nav-links {mobileMenuOpen ? 'nav-links-mobile' : ''}">
-			<a href="/" on:click={closeMobileMenu}>Home</a>
-			<a href="/#projects" on:click={closeMobileMenu}>Projects</a>
-			<a href="/#skills" on:click={closeMobileMenu}>Skills</a>
-			<a href="/#contact" on:click={closeMobileMenu}>Contact</a>
+			{#each navigationItems as navItem (navItem.href)}
+				<a href={navItem.href} onclick={closeMobileMenu}>{navItem.label}</a>
+			{/each}
 		</div>
-		<button class="nav-toggle" on:click={toggleMobileMenu} aria-label="Toggle menu">
+		<button class="nav-toggle" onclick={toggleMobileMenu} aria-label="Toggle menu">
 			<span></span>
 			<span></span>
 			<span></span>
