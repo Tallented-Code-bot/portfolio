@@ -50,8 +50,8 @@
 	}
 
 	.contact {
-		background: #1f2937;
-		color: white;
+		background: var(--color-bg-dark);
+		color: var(--color-text-white);
 		padding: 5rem 0;
 	}
 
@@ -59,7 +59,7 @@
 		text-align: center;
 		font-size: 2.5rem;
 		margin-bottom: 3rem;
-		color: white;
+		color: var(--color-text-white);
 	}
 
 	.contact-content {
@@ -98,7 +98,7 @@
 	}
 
 	.contact-item a {
-		color: #60a5fa;
+		color: var(--color-text-link);
 		text-decoration: none;
 	}
 
@@ -113,22 +113,22 @@
 	.btn {
 		display: inline-block;
 		padding: 12px 24px;
-		border-radius: 6px;
+		border-radius: var(--border-radius-md);
 		text-decoration: none;
 		font-weight: 500;
-		transition: all 0.3s ease;
+		transition: all var(--transition-normal);
 		border: 2px solid transparent;
 	}
 
 	.btn-primary {
-		background: #2563eb;
-		color: white;
-		border-color: #2563eb;
+		background: var(--color-primary);
+		color: var(--color-text-white);
+		border-color: var(--color-primary);
 	}
 
 	.btn-primary:hover {
-		background: #1d4ed8;
-		border-color: #1d4ed8;
+		background: var(--color-primary-hover);
+		border-color: var(--color-primary-hover);
 	}
 
 	/* Mobile Responsive */

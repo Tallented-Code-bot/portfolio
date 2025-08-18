@@ -63,14 +63,14 @@
 	}
 
 	.projects {
-		background: #f9fafb;
+		background: var(--color-bg-secondary);
 	}
 
 	.section-title {
 		text-align: center;
 		font-size: 2.5rem;
 		margin-bottom: 3rem;
-		color: #1f2937;
+		color: var(--color-text-primary);
 	}
 
 	.projects-grid {
@@ -80,13 +80,13 @@
 	}
 
 	.project-card {
-		background: white;
-		border-radius: 12px;
+		background: var(--color-surface);
+		border-radius: var(--border-radius-xl);
 		overflow: hidden;
-		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		box-shadow: var(--shadow-md);
 		transition:
-			transform 0.3s ease,
-			box-shadow 0.3s ease;
+			transform var(--transition-normal),
+			box-shadow var(--transition-normal);
 	}
 
 	.project-content-link {
@@ -97,14 +97,14 @@
 
 	.project-card:hover {
 		transform: translateY(-5px);
-		box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+		box-shadow: var(--shadow-lg);
 	}
 
 	.project-image {
 		position: relative;
 		height: 200px;
 		overflow: hidden;
-		background: #e5e7eb;
+		background: var(--color-border-light);
 	}
 
 	.project-image img {
@@ -119,12 +119,12 @@
 		left: 0;
 		right: 0;
 		bottom: 0;
-		background: rgba(0, 0, 0, 0.8);
+		background: var(--color-bg-overlay);
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		opacity: 0;
-		transition: opacity 0.3s ease;
+		transition: opacity var(--transition-normal);
 	}
 
 	.project-card:hover .project-overlay {
@@ -137,17 +137,17 @@
 	}
 
 	.project-link {
-		color: white;
+		color: var(--color-text-white);
 		text-decoration: none;
 		padding: 8px 16px;
-		border: 1px solid white;
-		border-radius: 4px;
-		transition: all 0.3s ease;
+		border: 1px solid var(--color-text-white);
+		border-radius: var(--border-radius-sm);
+		transition: all var(--transition-normal);
 	}
 
 	.project-link:hover {
-		background: white;
-		color: #333;
+		background: var(--color-text-white);
+		color: var(--color-text-primary);
 	}
 
 	.project-content {
@@ -157,11 +157,11 @@
 	.project-title {
 		font-size: 1.3rem;
 		margin-bottom: 0.5rem;
-		color: #1f2937;
+		color: var(--color-text-primary);
 	}
 
 	.project-description {
-		color: #6b7280;
+		color: var(--color-text-muted);
 		margin-bottom: 1rem;
 		line-height: 1.6;
 	}
@@ -173,10 +173,10 @@
 	}
 
 	.tech-tag {
-		background: #e0e7ff;
-		color: #3730a3;
+		background: var(--color-tech-bg);
+		color: var(--color-tech-text);
 		padding: 4px 8px;
-		border-radius: 12px;
+		border-radius: var(--border-radius-xl);
 		font-size: 0.8rem;
 		font-weight: 500;
 	}

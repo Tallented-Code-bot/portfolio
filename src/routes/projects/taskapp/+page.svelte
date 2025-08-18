@@ -10,7 +10,10 @@
 
 <svelte:head>
 	<title>Task Management App - Your Name Portfolio</title>
-	<meta name="description" content="A collaborative task management application with real-time updates" />
+	<meta
+		name="description"
+		content="A collaborative task management application with real-time updates"
+	/>
 </svelte:head>
 
 <div class="project-detail">
@@ -25,7 +28,8 @@
 			</div>
 			<h1 class="project-title">Task Management App</h1>
 			<p class="project-subtitle">
-				A collaborative task management application with real-time updates and team collaboration features
+				A collaborative task management application with real-time updates and team collaboration
+				features
 			</p>
 			<div class="project-links">
 				<a
@@ -58,13 +62,15 @@
 				<section class="project-overview">
 					<h2>Project Overview</h2>
 					<p>
-						This task management application is designed to help teams collaborate effectively on projects.
-						Built with Svelte and Firebase, it provides real-time synchronization across all connected devices,
-						ensuring that team members are always up-to-date with the latest project status.
+						This task management application is designed to help teams collaborate effectively on
+						projects. Built with Svelte and Firebase, it provides real-time synchronization across
+						all connected devices, ensuring that team members are always up-to-date with the latest
+						project status.
 					</p>
 					<p>
-						The application features an intuitive drag-and-drop interface, customizable project boards,
-						and comprehensive task tracking with due dates, priorities, and team member assignments.
+						The application features an intuitive drag-and-drop interface, customizable project
+						boards, and comprehensive task tracking with due dates, priorities, and team member
+						assignments.
 					</p>
 				</section>
 
@@ -146,28 +152,34 @@
 					<div class="challenge-item">
 						<h3>Real-time Synchronization</h3>
 						<p>
-							<strong>Challenge:</strong> Ensuring consistent data across multiple users editing simultaneously without conflicts.
+							<strong>Challenge:</strong> Ensuring consistent data across multiple users editing simultaneously
+							without conflicts.
 						</p>
 						<p>
-							<strong>Solution:</strong> Implemented Firebase Firestore's real-time listeners with optimistic updates and conflict resolution strategies.
+							<strong>Solution:</strong> Implemented Firebase Firestore's real-time listeners with optimistic
+							updates and conflict resolution strategies.
 						</p>
 					</div>
 					<div class="challenge-item">
 						<h3>Drag and Drop Performance</h3>
 						<p>
-							<strong>Challenge:</strong> Maintaining smooth drag-and-drop interactions while updating the database in real-time.
+							<strong>Challenge:</strong> Maintaining smooth drag-and-drop interactions while updating
+							the database in real-time.
 						</p>
 						<p>
-							<strong>Solution:</strong> Used local state management with debounced database updates and visual feedback for immediate user response.
+							<strong>Solution:</strong> Used local state management with debounced database updates
+							and visual feedback for immediate user response.
 						</p>
 					</div>
 					<div class="challenge-item">
 						<h3>Mobile Responsiveness</h3>
 						<p>
-							<strong>Challenge:</strong> Creating a touch-friendly interface that works well on mobile devices.
+							<strong>Challenge:</strong> Creating a touch-friendly interface that works well on mobile
+							devices.
 						</p>
 						<p>
-							<strong>Solution:</strong> Implemented touch gestures for mobile and redesigned the UI to be mobile-first with larger touch targets.
+							<strong>Solution:</strong> Implemented touch gestures for mobile and redesigned the UI
+							to be mobile-first with larger touch targets.
 						</p>
 					</div>
 				</section>
@@ -180,20 +192,20 @@
 							real-time collaborative applications with offline support.
 						</li>
 						<li>
-							<strong>Svelte Framework:</strong> Gained deep expertise in Svelte's reactive system,
-							stores, and component lifecycle for building efficient web applications.
+							<strong>Svelte Framework:</strong> Gained deep expertise in Svelte's reactive system, stores,
+							and component lifecycle for building efficient web applications.
 						</li>
 						<li>
-							<strong>State Management:</strong> Learned to handle complex application state across
-							multiple components with proper data flow and updates.
+							<strong>State Management:</strong> Learned to handle complex application state across multiple
+							components with proper data flow and updates.
 						</li>
 						<li>
-							<strong>User Experience:</strong> Developed skills in creating intuitive interfaces
-							with smooth animations and responsive feedback.
+							<strong>User Experience:</strong> Developed skills in creating intuitive interfaces with
+							smooth animations and responsive feedback.
 						</li>
 						<li>
-							<strong>Collaborative Features:</strong> Understanding of building features that
-							enable effective team collaboration and communication.
+							<strong>Collaborative Features:</strong> Understanding of building features that enable
+							effective team collaboration and communication.
 						</li>
 					</ul>
 				</section>
@@ -214,8 +226,8 @@
 	}
 
 	.hero-section {
-		background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-		color: white;
+		background: var(--gradient-primary);
+		color: var(--color-text-white);
 		padding: 4rem 0;
 		text-align: center;
 	}
@@ -226,7 +238,7 @@
 	}
 
 	.breadcrumb a {
-		color: white;
+		color: var(--color-text-white);
 		text-decoration: none;
 	}
 
@@ -264,33 +276,33 @@
 	.btn {
 		display: inline-block;
 		padding: 12px 24px;
-		border-radius: 6px;
+		border-radius: var(--border-radius-md);
 		text-decoration: none;
 		font-weight: 500;
-		transition: all 0.3s ease;
+		transition: all var(--transition-normal);
 		border: 2px solid transparent;
 	}
 
 	.btn-primary {
-		background: #2563eb;
-		color: white;
-		border-color: #2563eb;
+		background: var(--color-primary);
+		color: var(--color-text-white);
+		border-color: var(--color-primary);
 	}
 
 	.btn-primary:hover {
-		background: #1d4ed8;
-		border-color: #1d4ed8;
+		background: var(--color-primary-hover);
+		border-color: var(--color-primary-hover);
 	}
 
 	.btn-secondary {
 		background: transparent;
-		color: white;
-		border-color: white;
+		color: var(--color-text-white);
+		border-color: var(--color-text-white);
 	}
 
 	.btn-secondary:hover {
-		background: white;
-		color: #2563eb;
+		background: var(--color-text-white);
+		color: var(--color-primary);
 	}
 
 	.content-section {
@@ -305,8 +317,8 @@
 	.project-image img {
 		max-width: 100%;
 		height: auto;
-		border-radius: 12px;
-		box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+		border-radius: var(--border-radius-xl);
+		box-shadow: var(--shadow-xl);
 	}
 
 	.project-content section {
@@ -316,20 +328,20 @@
 	.project-content h2 {
 		font-size: 2rem;
 		margin-bottom: 1.5rem;
-		color: #1f2937;
-		border-bottom: 3px solid #2563eb;
+		color: var(--color-text-primary);
+		border-bottom: 3px solid var(--color-primary);
 		padding-bottom: 0.5rem;
 	}
 
 	.project-content h3 {
 		font-size: 1.3rem;
 		margin-bottom: 1rem;
-		color: #374151;
+		color: var(--color-text-secondary);
 	}
 
 	.project-content p {
 		line-height: 1.7;
-		color: #4b5563;
+		color: var(--color-text-muted);
 		margin-bottom: 1rem;
 	}
 
@@ -341,14 +353,14 @@
 	}
 
 	.tech-category {
-		background: #f9fafb;
+		background: var(--color-bg-secondary);
 		padding: 1.5rem;
-		border-radius: 8px;
-		border-left: 4px solid #2563eb;
+		border-radius: var(--border-radius-lg);
+		border-left: 4px solid var(--color-primary);
 	}
 
 	.tech-category h3 {
-		color: #2563eb;
+		color: var(--color-primary);
 		margin-bottom: 1rem;
 	}
 
@@ -360,14 +372,14 @@
 
 	.tech-category li {
 		padding: 0.3rem 0;
-		color: #4b5563;
+		color: var(--color-text-muted);
 		position: relative;
 		padding-left: 1rem;
 	}
 
 	.tech-category li:before {
 		content: '•';
-		color: #2563eb;
+		color: var(--color-primary);
 		position: absolute;
 		left: 0;
 	}
@@ -380,13 +392,13 @@
 	}
 
 	.feature-item {
-		background: white;
+		background: var(--color-surface);
 		padding: 2rem;
-		border-radius: 12px;
-		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-		border: 1px solid #e5e7eb;
+		border-radius: var(--border-radius-xl);
+		box-shadow: var(--shadow-md);
+		border: 1px solid var(--color-border-light);
 		text-align: center;
-		transition: transform 0.3s ease;
+		transition: transform var(--transition-normal);
 	}
 
 	.feature-item:hover {
@@ -399,25 +411,25 @@
 	}
 
 	.feature-item h3 {
-		color: #1f2937;
+		color: var(--color-text-primary);
 		margin-bottom: 0.5rem;
 	}
 
 	.feature-item p {
 		font-size: 0.9rem;
-		color: #6b7280;
+		color: var(--color-text-muted);
 	}
 
 	.challenge-item {
-		background: #f9fafb;
+		background: var(--color-bg-secondary);
 		padding: 2rem;
-		border-radius: 8px;
+		border-radius: var(--border-radius-lg);
 		margin-bottom: 2rem;
-		border-left: 4px solid #f59e0b;
+		border-left: 4px solid var(--color-warning);
 	}
 
 	.challenge-item h3 {
-		color: #92400e;
+		color: var(--color-warning-text);
 		margin-bottom: 1rem;
 	}
 
@@ -427,16 +439,16 @@
 	}
 
 	.lessons li {
-		background: white;
+		background: var(--color-surface);
 		padding: 1.5rem;
 		margin-bottom: 1rem;
-		border-radius: 8px;
-		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-		border-left: 4px solid #10b981;
+		border-radius: var(--border-radius-lg);
+		box-shadow: var(--shadow-sm);
+		border-left: 4px solid var(--color-success);
 	}
 
 	.lessons strong {
-		color: #065f46;
+		color: var(--color-success-text);
 	}
 
 	/* Mobile Responsive */

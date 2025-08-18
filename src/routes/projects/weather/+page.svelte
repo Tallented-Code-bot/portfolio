@@ -25,7 +25,8 @@
 			</div>
 			<h1 class="project-title">Weather Dashboard</h1>
 			<p class="project-subtitle">
-				A responsive weather dashboard with location-based forecasts and interactive data visualization
+				A responsive weather dashboard with location-based forecasts and interactive data
+				visualization
 			</p>
 			<div class="project-links">
 				<a
@@ -58,14 +59,16 @@
 				<section class="project-overview">
 					<h2>Project Overview</h2>
 					<p>
-						This weather dashboard provides comprehensive weather information with a clean, modern interface.
-						Users can search for any location worldwide and get detailed current weather conditions,
-						5-day forecasts, and historical weather patterns displayed through interactive charts.
+						This weather dashboard provides comprehensive weather information with a clean, modern
+						interface. Users can search for any location worldwide and get detailed current weather
+						conditions, 5-day forecasts, and historical weather patterns displayed through
+						interactive charts.
 					</p>
 					<p>
-						The application features automatic location detection, customizable units, and data visualization
-						that helps users understand weather trends at a glance. Built with performance in mind,
-						it provides fast, accurate weather data from multiple reliable sources.
+						The application features automatic location detection, customizable units, and data
+						visualization that helps users understand weather trends at a glance. Built with
+						performance in mind, it provides fast, accurate weather data from multiple reliable
+						sources.
 					</p>
 				</section>
 
@@ -147,19 +150,23 @@
 					<div class="challenge-item">
 						<h3>API Rate Limiting</h3>
 						<p>
-							<strong>Challenge:</strong> Managing API calls efficiently while providing real-time data updates.
+							<strong>Challenge:</strong> Managing API calls efficiently while providing real-time data
+							updates.
 						</p>
 						<p>
-							<strong>Solution:</strong> Implemented smart caching with expiration times and batched API requests to minimize calls while keeping data fresh.
+							<strong>Solution:</strong> Implemented smart caching with expiration times and batched
+							API requests to minimize calls while keeping data fresh.
 						</p>
 					</div>
 					<div class="challenge-item">
 						<h3>Data Visualization Performance</h3>
 						<p>
-							<strong>Challenge:</strong> Rendering smooth charts with large datasets without impacting performance.
+							<strong>Challenge:</strong> Rendering smooth charts with large datasets without impacting
+							performance.
 						</p>
 						<p>
-							<strong>Solution:</strong> Used Chart.js with data decimation and lazy loading to handle large weather datasets efficiently.
+							<strong>Solution:</strong> Used Chart.js with data decimation and lazy loading to handle
+							large weather datasets efficiently.
 						</p>
 					</div>
 					<div class="challenge-item">
@@ -168,7 +175,8 @@
 							<strong>Challenge:</strong> Handling cases where geolocation fails or is blocked by users.
 						</p>
 						<p>
-							<strong>Solution:</strong> Implemented fallback location detection using IP-based location services and graceful error handling.
+							<strong>Solution:</strong> Implemented fallback location detection using IP-based location
+							services and graceful error handling.
 						</p>
 					</div>
 				</section>
@@ -177,28 +185,28 @@
 					<h2>What I Learned</h2>
 					<ul>
 						<li>
-							<strong>API Integration:</strong> Mastered working with external weather APIs,
-							handling rate limits, and implementing efficient data caching strategies.
+							<strong>API Integration:</strong> Mastered working with external weather APIs, handling
+							rate limits, and implementing efficient data caching strategies.
 						</li>
 						<li>
-							<strong>Data Visualization:</strong> Learned to create meaningful charts and graphs
-							that help users understand complex weather data patterns.
+							<strong>Data Visualization:</strong> Learned to create meaningful charts and graphs that
+							help users understand complex weather data patterns.
 						</li>
 						<li>
-							<strong>Vue.js Ecosystem:</strong> Gained expertise in Vue 3's Composition API,
-							Pinia for state management, and building reactive applications.
+							<strong>Vue.js Ecosystem:</strong> Gained expertise in Vue 3's Composition API, Pinia for
+							state management, and building reactive applications.
 						</li>
 						<li>
-							<strong>Progressive Web Apps:</strong> Implemented PWA features including
-							offline functionality, app installation, and background data sync.
+							<strong>Progressive Web Apps:</strong> Implemented PWA features including offline functionality,
+							app installation, and background data sync.
 						</li>
 						<li>
-							<strong>User Experience:</strong> Created intuitive interfaces with smooth
-							animations, theme switching, and responsive design principles.
+							<strong>User Experience:</strong> Created intuitive interfaces with smooth animations,
+							theme switching, and responsive design principles.
 						</li>
 						<li>
-							<strong>Performance Optimization:</strong> Learned techniques for optimizing
-							data-heavy applications with efficient rendering and smart caching.
+							<strong>Performance Optimization:</strong> Learned techniques for optimizing data-heavy
+							applications with efficient rendering and smart caching.
 						</li>
 					</ul>
 				</section>
@@ -219,8 +227,8 @@
 	}
 
 	.hero-section {
-		background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-		color: white;
+		background: var(--gradient-primary);
+		color: var(--color-text-white);
 		padding: 4rem 0;
 		text-align: center;
 	}
@@ -231,7 +239,7 @@
 	}
 
 	.breadcrumb a {
-		color: white;
+		color: var(--color-text-white);
 		text-decoration: none;
 	}
 
@@ -269,33 +277,33 @@
 	.btn {
 		display: inline-block;
 		padding: 12px 24px;
-		border-radius: 6px;
+		border-radius: var(--border-radius-md);
 		text-decoration: none;
 		font-weight: 500;
-		transition: all 0.3s ease;
+		transition: all var(--transition-normal);
 		border: 2px solid transparent;
 	}
 
 	.btn-primary {
-		background: #2563eb;
-		color: white;
-		border-color: #2563eb;
+		background: var(--color-primary);
+		color: var(--color-text-white);
+		border-color: var(--color-primary);
 	}
 
 	.btn-primary:hover {
-		background: #1d4ed8;
-		border-color: #1d4ed8;
+		background: var(--color-primary-hover);
+		border-color: var(--color-primary-hover);
 	}
 
 	.btn-secondary {
 		background: transparent;
-		color: white;
-		border-color: white;
+		color: var(--color-text-white);
+		border-color: var(--color-text-white);
 	}
 
 	.btn-secondary:hover {
-		background: white;
-		color: #2563eb;
+		background: var(--color-text-white);
+		color: var(--color-primary);
 	}
 
 	.content-section {
@@ -310,8 +318,8 @@
 	.project-image img {
 		max-width: 100%;
 		height: auto;
-		border-radius: 12px;
-		box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+		border-radius: var(--border-radius-xl);
+		box-shadow: var(--shadow-xl);
 	}
 
 	.project-content section {
@@ -321,20 +329,20 @@
 	.project-content h2 {
 		font-size: 2rem;
 		margin-bottom: 1.5rem;
-		color: #1f2937;
-		border-bottom: 3px solid #2563eb;
+		color: var(--color-text-primary);
+		border-bottom: 3px solid var(--color-primary);
 		padding-bottom: 0.5rem;
 	}
 
 	.project-content h3 {
 		font-size: 1.3rem;
 		margin-bottom: 1rem;
-		color: #374151;
+		color: var(--color-text-secondary);
 	}
 
 	.project-content p {
 		line-height: 1.7;
-		color: #4b5563;
+		color: var(--color-text-muted);
 		margin-bottom: 1rem;
 	}
 
@@ -346,14 +354,14 @@
 	}
 
 	.tech-category {
-		background: #f9fafb;
+		background: var(--color-bg-secondary);
 		padding: 1.5rem;
-		border-radius: 8px;
-		border-left: 4px solid #2563eb;
+		border-radius: var(--border-radius-lg);
+		border-left: 4px solid var(--color-primary);
 	}
 
 	.tech-category h3 {
-		color: #2563eb;
+		color: var(--color-primary);
 		margin-bottom: 1rem;
 	}
 
@@ -365,14 +373,14 @@
 
 	.tech-category li {
 		padding: 0.3rem 0;
-		color: #4b5563;
+		color: var(--color-text-muted);
 		position: relative;
 		padding-left: 1rem;
 	}
 
 	.tech-category li:before {
 		content: '•';
-		color: #2563eb;
+		color: var(--color-primary);
 		position: absolute;
 		left: 0;
 	}
@@ -385,13 +393,13 @@
 	}
 
 	.feature-item {
-		background: white;
+		background: var(--color-surface);
 		padding: 2rem;
-		border-radius: 12px;
-		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-		border: 1px solid #e5e7eb;
+		border-radius: var(--border-radius-xl);
+		box-shadow: var(--shadow-md);
+		border: 1px solid var(--color-border-light);
 		text-align: center;
-		transition: transform 0.3s ease;
+		transition: transform var(--transition-normal);
 	}
 
 	.feature-item:hover {
@@ -404,25 +412,25 @@
 	}
 
 	.feature-item h3 {
-		color: #1f2937;
+		color: var(--color-text-primary);
 		margin-bottom: 0.5rem;
 	}
 
 	.feature-item p {
 		font-size: 0.9rem;
-		color: #6b7280;
+		color: var(--color-text-muted);
 	}
 
 	.challenge-item {
-		background: #f9fafb;
+		background: var(--color-bg-secondary);
 		padding: 2rem;
-		border-radius: 8px;
+		border-radius: var(--border-radius-lg);
 		margin-bottom: 2rem;
-		border-left: 4px solid #f59e0b;
+		border-left: 4px solid var(--color-warning);
 	}
 
 	.challenge-item h3 {
-		color: #92400e;
+		color: var(--color-warning-text);
 		margin-bottom: 1rem;
 	}
 
@@ -432,16 +440,16 @@
 	}
 
 	.lessons li {
-		background: white;
+		background: var(--color-surface);
 		padding: 1.5rem;
 		margin-bottom: 1rem;
-		border-radius: 8px;
-		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-		border-left: 4px solid #10b981;
+		border-radius: var(--border-radius-lg);
+		box-shadow: var(--shadow-sm);
+		border-left: 4px solid var(--color-success);
 	}
 
 	.lessons strong {
-		color: #065f46;
+		color: var(--color-success-text);
 	}
 
 	/* Mobile Responsive */

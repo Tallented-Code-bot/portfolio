@@ -152,8 +152,8 @@
 							shopping simultaneously.
 						</p>
 						<p>
-							<strong>Solution:</strong> Implemented optimistic locking in MongoDB and real-time
-							inventory updates using WebSocket connections.
+							<strong>Solution:</strong> Implemented optimistic locking in MongoDB and real-time inventory
+							updates using WebSocket connections.
 						</p>
 					</div>
 					<div class="challenge-item">
@@ -169,12 +169,11 @@
 					<div class="challenge-item">
 						<h3>Performance Optimization</h3>
 						<p>
-							<strong>Challenge:</strong> Loading product catalogs quickly with high-resolution
-							images.
+							<strong>Challenge:</strong> Loading product catalogs quickly with high-resolution images.
 						</p>
 						<p>
-							<strong>Solution:</strong> Implemented lazy loading, image optimization with
-							Cloudinary, and pagination for large product sets.
+							<strong>Solution:</strong> Implemented lazy loading, image optimization with Cloudinary,
+							and pagination for large product sets.
 						</p>
 					</div>
 				</section>
@@ -183,24 +182,24 @@
 					<h2>What I Learned</h2>
 					<ul>
 						<li>
-							<strong>Full-stack Integration:</strong> Gained experience in seamlessly connecting
-							frontend and backend systems with proper error handling and state management.
+							<strong>Full-stack Integration:</strong> Gained experience in seamlessly connecting frontend
+							and backend systems with proper error handling and state management.
 						</li>
 						<li>
-							<strong>Payment Processing:</strong> Learned to implement secure payment flows and
-							handle various payment scenarios including failures and refunds.
+							<strong>Payment Processing:</strong> Learned to implement secure payment flows and handle
+							various payment scenarios including failures and refunds.
 						</li>
 						<li>
-							<strong>Database Design:</strong> Designed efficient MongoDB schemas for complex
-							e-commerce relationships between users, products, and orders.
+							<strong>Database Design:</strong> Designed efficient MongoDB schemas for complex e-commerce
+							relationships between users, products, and orders.
 						</li>
 						<li>
-							<strong>Security Best Practices:</strong> Implemented authentication, authorization,
-							and data validation to protect against common web vulnerabilities.
+							<strong>Security Best Practices:</strong> Implemented authentication, authorization, and
+							data validation to protect against common web vulnerabilities.
 						</li>
 						<li>
-							<strong>Performance Optimization:</strong> Learned techniques for optimizing both
-							frontend load times and backend query performance.
+							<strong>Performance Optimization:</strong> Learned techniques for optimizing both frontend
+							load times and backend query performance.
 						</li>
 					</ul>
 				</section>
@@ -221,8 +220,8 @@
 	}
 
 	.hero-section {
-		background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-		color: white;
+		background: var(--gradient-primary);
+		color: var(--color-text-white);
 		padding: 4rem 0;
 		text-align: center;
 	}
@@ -233,7 +232,7 @@
 	}
 
 	.breadcrumb a {
-		color: white;
+		color: var(--color-text-white);
 		text-decoration: none;
 	}
 
@@ -271,33 +270,33 @@
 	.btn {
 		display: inline-block;
 		padding: 12px 24px;
-		border-radius: 6px;
+		border-radius: var(--border-radius-md);
 		text-decoration: none;
 		font-weight: 500;
-		transition: all 0.3s ease;
+		transition: all var(--transition-normal);
 		border: 2px solid transparent;
 	}
 
 	.btn-primary {
-		background: #2563eb;
-		color: white;
-		border-color: #2563eb;
+		background: var(--color-primary);
+		color: var(--color-text-white);
+		border-color: var(--color-primary);
 	}
 
 	.btn-primary:hover {
-		background: #1d4ed8;
-		border-color: #1d4ed8;
+		background: var(--color-primary-hover);
+		border-color: var(--color-primary-hover);
 	}
 
 	.btn-secondary {
 		background: transparent;
-		color: white;
-		border-color: white;
+		color: var(--color-text-white);
+		border-color: var(--color-text-white);
 	}
 
 	.btn-secondary:hover {
-		background: white;
-		color: #2563eb;
+		background: var(--color-text-white);
+		color: var(--color-primary);
 	}
 
 	.content-section {
@@ -312,8 +311,8 @@
 	.project-image img {
 		max-width: 100%;
 		height: auto;
-		border-radius: 12px;
-		box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+		border-radius: var(--border-radius-xl);
+		box-shadow: var(--shadow-xl);
 	}
 
 	.project-content section {
@@ -323,20 +322,20 @@
 	.project-content h2 {
 		font-size: 2rem;
 		margin-bottom: 1.5rem;
-		color: #1f2937;
-		border-bottom: 3px solid #2563eb;
+		color: var(--color-text-primary);
+		border-bottom: 3px solid var(--color-primary);
 		padding-bottom: 0.5rem;
 	}
 
 	.project-content h3 {
 		font-size: 1.3rem;
 		margin-bottom: 1rem;
-		color: #374151;
+		color: var(--color-text-secondary);
 	}
 
 	.project-content p {
 		line-height: 1.7;
-		color: #4b5563;
+		color: var(--color-text-muted);
 		margin-bottom: 1rem;
 	}
 
@@ -348,14 +347,14 @@
 	}
 
 	.tech-category {
-		background: #f9fafb;
+		background: var(--color-bg-secondary);
 		padding: 1.5rem;
-		border-radius: 8px;
-		border-left: 4px solid #2563eb;
+		border-radius: var(--border-radius-lg);
+		border-left: 4px solid var(--color-primary);
 	}
 
 	.tech-category h3 {
-		color: #2563eb;
+		color: var(--color-primary);
 		margin-bottom: 1rem;
 	}
 
@@ -367,14 +366,14 @@
 
 	.tech-category li {
 		padding: 0.3rem 0;
-		color: #4b5563;
+		color: var(--color-text-muted);
 		position: relative;
 		padding-left: 1rem;
 	}
 
 	.tech-category li:before {
 		content: '•';
-		color: #2563eb;
+		color: var(--color-primary);
 		position: absolute;
 		left: 0;
 	}
@@ -387,13 +386,13 @@
 	}
 
 	.feature-item {
-		background: white;
+		background: var(--color-surface);
 		padding: 2rem;
-		border-radius: 12px;
-		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-		border: 1px solid #e5e7eb;
+		border-radius: var(--border-radius-xl);
+		box-shadow: var(--shadow-md);
+		border: 1px solid var(--color-border-light);
 		text-align: center;
-		transition: transform 0.3s ease;
+		transition: transform var(--transition-normal);
 	}
 
 	.feature-item:hover {
@@ -406,25 +405,25 @@
 	}
 
 	.feature-item h3 {
-		color: #1f2937;
+		color: var(--color-text-primary);
 		margin-bottom: 0.5rem;
 	}
 
 	.feature-item p {
 		font-size: 0.9rem;
-		color: #6b7280;
+		color: var(--color-text-muted);
 	}
 
 	.challenge-item {
-		background: #f9fafb;
+		background: var(--color-bg-secondary);
 		padding: 2rem;
-		border-radius: 8px;
+		border-radius: var(--border-radius-lg);
 		margin-bottom: 2rem;
-		border-left: 4px solid #f59e0b;
+		border-left: 4px solid var(--color-warning);
 	}
 
 	.challenge-item h3 {
-		color: #92400e;
+		color: var(--color-warning-text);
 		margin-bottom: 1rem;
 	}
 
@@ -434,16 +433,16 @@
 	}
 
 	.lessons li {
-		background: white;
+		background: var(--color-surface);
 		padding: 1.5rem;
 		margin-bottom: 1rem;
-		border-radius: 8px;
-		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-		border-left: 4px solid #10b981;
+		border-radius: var(--border-radius-lg);
+		box-shadow: var(--shadow-sm);
+		border-left: 4px solid var(--color-success);
 	}
 
 	.lessons strong {
-		color: #065f46;
+		color: var(--color-success-text);
 	}
 
 	/* Mobile Responsive */

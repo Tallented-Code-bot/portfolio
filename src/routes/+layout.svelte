@@ -1,6 +1,8 @@
 <script lang="ts">
 	import favicon from '$lib/assets/favicon.svg';
+	import { page } from '$app/stores';
 	import { navigationItems, personalInfo } from '$lib/data/portfolio';
+	import '$lib/styles/global.css';
 
 	let { children } = $props();
 	let mobileMenuOpen = $state(false);
@@ -40,31 +42,15 @@
 {@render children?.()}
 
 <style>
-	:global(html) {
-		scroll-behavior: smooth;
-	}
-
-	:global(body) {
-		margin: 0;
-		font-family:
-			-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-		line-height: 1.6;
-		color: #333;
-	}
-
-	:global(*) {
-		box-sizing: border-box;
-	}
-
 	/* Header */
 	.header {
 		position: fixed;
 		top: 0;
 		left: 0;
 		right: 0;
-		background: rgba(255, 255, 255, 0.95);
+		background: var(--color-header-bg);
 		backdrop-filter: blur(10px);
-		border-bottom: 1px solid #eee;
+		border-bottom: 1px solid var(--color-header-border);
 		z-index: 1000;
 	}
 
@@ -81,7 +67,7 @@
 		font-size: 1.5rem;
 		font-weight: bold;
 		text-decoration: none;
-		color: #2563eb;
+		color: var(--color-primary);
 	}
 
 	.nav-links {
@@ -94,13 +80,13 @@
 
 	.nav-links a {
 		text-decoration: none;
-		color: #333;
+		color: var(--color-text-primary);
 		font-weight: 500;
-		transition: color 0.3s ease;
+		transition: color var(--transition-normal);
 	}
 
 	.nav-links a:hover {
-		color: #2563eb;
+		color: var(--color-primary);
 	}
 
 	.nav-toggle {
@@ -117,9 +103,9 @@
 		display: block;
 		width: 20px;
 		height: 2px;
-		background: #333;
+		background: var(--color-text-primary);
 		border-radius: 1px;
-		transition: all 0.3s ease;
+		transition: all var(--transition-normal);
 	}
 
 	/* Mobile Responsive */
@@ -135,8 +121,8 @@
 			left: 0;
 			right: 0;
 			flex-direction: column;
-			background: white;
-			border-top: 1px solid #eee;
+			background: var(--color-bg-primary);
+			border-top: 1px solid var(--color-header-border);
 			padding: 1rem;
 			gap: 1rem;
 		}

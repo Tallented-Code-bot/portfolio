@@ -62,8 +62,8 @@
 
 	/* Intro Section */
 	.intro {
-		background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-		color: white;
+		background: var(--gradient-primary);
+		color: var(--color-text-white);
 		padding: 8rem 0 5rem;
 		margin-top: 80px;
 	}
@@ -81,7 +81,7 @@
 	}
 
 	.highlight {
-		color: #fbbf24;
+		color: var(--color-accent);
 	}
 
 	.intro-subtitle {
@@ -108,39 +108,39 @@
 	.btn {
 		display: inline-block;
 		padding: 12px 24px;
-		border-radius: 6px;
+		border-radius: var(--border-radius-md);
 		text-decoration: none;
 		font-weight: 500;
-		transition: all 0.3s ease;
+		transition: all var(--transition-normal);
 		border: 2px solid transparent;
 	}
 
 	.btn-primary {
-		background: #2563eb;
-		color: white;
-		border-color: #2563eb;
+		background: var(--color-primary);
+		color: var(--color-text-white);
+		border-color: var(--color-primary);
 	}
 
 	.btn-primary:hover {
-		background: #1d4ed8;
-		border-color: #1d4ed8;
+		background: var(--color-primary-hover);
+		border-color: var(--color-primary-hover);
 	}
 
 	.btn-secondary {
 		background: transparent;
-		color: white;
-		border-color: white;
+		color: var(--color-text-white);
+		border-color: var(--color-text-white);
 	}
 
 	.btn-secondary:hover {
-		background: white;
-		color: #2563eb;
+		background: var(--color-text-white);
+		color: var(--color-primary);
 	}
 
 	/* Footer */
 	.footer {
-		background: #111827;
-		color: white;
+		background: var(--color-bg-darker);
+		color: var(--color-text-white);
 		text-align: center;
 		padding: 2rem 0;
 	}
