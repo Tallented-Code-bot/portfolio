@@ -2,10 +2,10 @@ import type { Project, SkillGroup, ContactInfo, PersonalInfo } from '$lib/types'
 
 // Personal information
 export const personalInfo: PersonalInfo = {
-	name: 'Your Name',
-	title: 'Full-Stack Developer',
-	bio: "I'm a passionate full-stack developer with expertise in modern web technologies. I love creating efficient, scalable, and user-friendly applications that solve real-world problems. With a strong foundation in both frontend and backend development, I bring ideas to life through clean code and thoughtful design.",
-	location: 'Your City, Your Country'
+	name: 'Calvin Tallent',
+	title: 'Full-Stack Developer & Problem Solver',
+	bio: "Hey there! I'm Calvin, a full-stack developer who loves turning complex problems into elegant solutions. I'm passionate about building web applications that are not just functional, but delightful to use. When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or tinkering with side projects that push my skills to the next level.",
+	location: 'United States'
 };
 
 // Projects data
@@ -74,9 +74,9 @@ export const skills: SkillGroup[] = [
 
 // Contact information
 export const contactInfo: ContactInfo = {
-	email: 'your.email@example.com',
-	linkedin: 'https://linkedin.com/in/yourprofile',
-	github: 'https://github.com/yourusername',
+	email: 'calvin@example.com',
+	linkedin: 'https://linkedin.com/in/calvin-tallent',
+	github: 'https://github.com/calvintallent',
 	resumeUrl: '/resume.pdf'
 };
 

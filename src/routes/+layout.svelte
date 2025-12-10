@@ -1,6 +1,5 @@
 <script lang="ts">
 	import favicon from '$lib/assets/favicon.svg';
-	import { page } from '$app/stores';
 	import { navigationItems, personalInfo } from '$lib/data/portfolio';
 	import '$lib/styles/global.css';
 

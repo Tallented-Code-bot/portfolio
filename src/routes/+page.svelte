@@ -4,10 +4,10 @@
 </script>
 
 <svelte:head>
-	<title>Your Name - Portfolio</title>
+	<title>Calvin Tallent - Portfolio</title>
 	<meta
 		name="description"
-		content="Full-stack developer passionate about creating amazing web experiences"
+		content="Full-stack developer and problem solver passionate about creating amazing web experiences"
 	/>
 </svelte:head>
 
@@ -44,7 +44,7 @@
 <!-- Footer -->
 <footer class="footer">
 	<div class="container">
-		<p>&copy; 2024 Your Name. All rights reserved.</p>
+		<p>&copy; 2024 Calvin Tallent. All rights reserved.</p>
 	</div>
 </footer>
 
@@ -62,16 +62,33 @@
 
 	/* Intro Section */
 	.intro {
-		background: var(--gradient-primary);
+		background: var(--gradient-hero);
 		color: var(--color-text-white);
 		padding: 8rem 0 5rem;
 		margin-top: 80px;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.intro::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background:
+			radial-gradient(circle at 20% 50%, rgba(16, 185, 129, 0.1) 0%, transparent 50%),
+			radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
+		pointer-events: none;
 	}
 
 	.intro-content {
 		text-align: center;
 		max-width: 800px;
 		margin: 0 auto;
+		position: relative;
+		z-index: 1;
 	}
 
 	.intro-title {
@@ -107,34 +124,40 @@
 
 	.btn {
 		display: inline-block;
-		padding: 12px 24px;
-		border-radius: var(--border-radius-md);
+		padding: 14px 32px;
+		border-radius: var(--border-radius-lg);
 		text-decoration: none;
-		font-weight: 500;
+		font-weight: 600;
 		transition: all var(--transition-normal);
 		border: 2px solid transparent;
+		font-size: 1.05rem;
 	}
 
 	.btn-primary {
-		background: var(--color-primary);
-		color: var(--color-text-white);
-		border-color: var(--color-primary);
+		background: var(--color-text-white);
+		color: var(--color-primary);
+		border-color: var(--color-text-white);
+		box-shadow: var(--shadow-md);
 	}
 
 	.btn-primary:hover {
-		background: var(--color-primary-hover);
-		border-color: var(--color-primary-hover);
+		background: var(--color-bg-secondary);
+		border-color: var(--color-bg-secondary);
+		transform: translateY(-2px);
+		box-shadow: var(--shadow-lg);
 	}
 
 	.btn-secondary {
 		background: transparent;
 		color: var(--color-text-white);
-		border-color: var(--color-text-white);
+		border-color: rgba(255, 255, 255, 0.5);
+		backdrop-filter: blur(10px);
 	}
 
 	.btn-secondary:hover {
-		background: var(--color-text-white);
-		color: var(--color-primary);
+		background: rgba(255, 255, 255, 0.1);
+		border-color: var(--color-text-white);
+		transform: translateY(-2px);
 	}
 
 	/* Footer */

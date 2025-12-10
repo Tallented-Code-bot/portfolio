@@ -9,6 +9,25 @@ export interface Project {
 	slug: string;
 }
 
+export interface ProjectDetail extends Project {
+	overview: string[];
+	techStack: Array<{
+		category: string;
+		items: string[];
+	}>;
+	features: Array<{
+		icon: string;
+		title: string;
+		description: string;
+	}>;
+	challenges: Array<{
+		title: string;
+		challenge: string;
+		solution: string;
+	}>;
+	lessons: string[];
+}
+
 export interface SkillGroup {
 	category: string;
 	items: string[];

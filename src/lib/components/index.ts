@@ -1,3 +1,9 @@
 export { default as ProjectsSection } from './ProjectsSection.svelte';
 export { default as SkillsSection } from './SkillsSection.svelte';
 export { default as ContactSection } from './ContactSection.svelte';
+export { default as ProjectHero } from './ProjectHero.svelte';
+export { default as ProjectContent } from './ProjectContent.svelte';
+export { default as TechStack } from './TechStack.svelte';
+export { default as FeatureGrid } from './FeatureGrid.svelte';
+export { default as ChallengesSection } from './ChallengesSection.svelte';
+export { default as LessonsLearned } from './LessonsLearned.svelte';
