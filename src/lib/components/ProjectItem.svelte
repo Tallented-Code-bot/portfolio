@@ -1,24 +1,25 @@
 <script lang="ts">
-	import type { Project } from '$lib/types';
-
-	export let project: Project;
+	export let title: string;
+	export let description: string;
+	export let github: string = '';
+	export let demo: string = '';
 </script>
 
 <li class="project-item">
 	<h3 class="project-title">
-		{#if project.demo}
-			<a href={project.demo} target="_blank" rel="noopener noreferrer">{project.title}</a>
+		{#if demo}
+			<a href={demo} target="_blank" rel="noopener noreferrer">{title}</a>
 		{:else}
-			{project.title}
+			{title}
 		{/if}
 	</h3>
-	<p class="project-description">{project.description}</p>
+	<p class="project-description">{description}</p>
 	<div class="project-links">
-		{#if project.github}
-			<a href={project.github} target="_blank" rel="noopener noreferrer">GitHub</a>
+		{#if github}
+			<a href={github} target="_blank" rel="noopener noreferrer">GitHub</a>
 		{/if}
-		{#if project.demo}
-			<a href={project.demo} target="_blank" rel="noopener noreferrer">Demo</a>
+		{#if demo}
+			<a href={demo} target="_blank" rel="noopener noreferrer">Demo</a>
 		{/if}
 	</div>
 </li>
