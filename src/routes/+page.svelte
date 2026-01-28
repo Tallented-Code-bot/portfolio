@@ -15,16 +15,22 @@
 				<ul class="projects-list">
 					<ProjectItem
 						title="Autonomous Robot Control System"
-						description="Advanced robot control system with precision position tracking (±1 inch accuracy) using sensor fusion, vector path following, and asynchronous command execution for parallel operations."
 						github="https://github.com/calvintallent"
 						demo=""
-					/>
+					>
+						Advanced robot control system with precision position tracking (±1 inch accuracy) using
+						sensor fusion, vector path following, and asynchronous command execution for parallel
+						operations.
+					</ProjectItem>
 					<ProjectItem
 						title="Scratch to Rust Compiler"
-						description="A compiler that fetches Scratch projects via API and transpiles them to Rust, supporting concurrent script execution and implementing a Rust version of the Scratch standard library."
 						github="https://github.com/calvintallent"
 						demo=""
-					/>
+					>
+						A compiler that fetches Scratch projects via API and transpiles them to Rust, supporting
+						concurrent script execution and implementing a Rust version of the Scratch standard
+						library.
+					</ProjectItem>
 				</ul>
 			</div>
 			<div class="year-section">
@@ -32,22 +38,28 @@
 				<ul class="projects-list">
 					<ProjectItem
 						title="Planetarium Space Game"
-						description="Immersive space game built for Columbia Basin College's planetarium system, optimized to handle the extreme resolution requirements of planetarium displays."
 						github="https://github.com/calvintallent"
 						demo=""
-					/>
+					>
+						Immersive space game built for Columbia Basin College's planetarium system, optimized to
+						handle the extreme resolution requirements of planetarium displays.
+					</ProjectItem>
 					<ProjectItem
 						title="Procedural Image Generator"
-						description="High-performance procedural image generator using Perlin and other noise functions, optimized to handle large image generation efficiently."
 						github="https://github.com/calvintallent"
 						demo=""
-					/>
+					>
+						High-performance procedural image generator using Perlin and other noise functions,
+						optimized to handle large image generation efficiently.
+					</ProjectItem>
 					<ProjectItem
 						title="Image to Fourier Series Converter"
-						description="Converts SVG images into Fourier Series-based functions that recreate the image when graphed, bridging visual art with mathematical representation."
 						github="https://github.com/calvintallent"
 						demo=""
-					/>
+					>
+						Converts SVG images into Fourier Series-based functions that recreate the image when
+						graphed, bridging visual art with mathematical representation.
+					</ProjectItem>
 				</ul>
 			</div>
 		</div>

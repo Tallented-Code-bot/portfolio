@@ -1,6 +1,5 @@
 <script lang="ts">
 	export let title: string;
-	export let description: string;
 	export let github: string = '';
 	export let demo: string = '';
 </script>
@@ -13,7 +12,7 @@
 			{title}
 		{/if}
 	</h3>
-	<p class="project-description">{description}</p>
+	<p class="project-description"><slot /></p>
 	<div class="project-links">
 		{#if github}
 			<a href={github} target="_blank" rel="noopener noreferrer">GitHub</a>
