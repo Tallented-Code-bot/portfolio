@@ -7,6 +7,7 @@ export interface Project {
 	github?: string;
 	demo?: string;
 	slug: string;
+	year: number;
 }
 
 export interface ProjectDetail extends Project {
@@ -26,6 +27,7 @@ export interface ProjectDetail extends Project {
 		solution: string;
 	}>;
 	lessons: string[];
+	year: number;
 }
 
 export interface SkillGroup {
@@ -54,4 +56,30 @@ export interface SocialLinks {
 	twitter?: string;
 	email?: string;
 	website?: string;
+}
+
+export interface Experience {
+	id: number;
+	title: string;
+	organization: string;
+	location?: string;
+	startDate: string;
+	endDate: string;
+	current?: boolean;
+	description: string;
+	achievements: string[];
+	technologies?: string[];
+}
+
+export interface Education {
+	id: number;
+	institution: string;
+	degree: string;
+	field?: string;
+	location?: string;
+	startDate: string;
+	endDate: string;
+	gpa?: string;
+	coursework?: string[];
+	achievements?: string[];
 }

@@ -30,6 +30,7 @@ export const projectDetails: Record<string, ProjectDetail> = {
 		github: 'https://github.com/username/ecommerce',
 		demo: 'https://demo.example.com',
 		slug: 'ecommerce',
+		year: 2023,
 		overview: [
 			'This e-commerce platform is a full-featured online shopping solution built with modern web technologies. It includes user authentication, product management, shopping cart functionality, secure payment processing with Stripe, and an admin dashboard for managing orders and inventory.',
 			'The application features a responsive design that works seamlessly across desktop and mobile devices, providing an optimal shopping experience for all users.'
@@ -37,7 +38,14 @@ export const projectDetails: Record<string, ProjectDetail> = {
 		techStack: [
 			{
 				category: 'Frontend',
-				items: ['React 18', 'TypeScript', 'Redux Toolkit', 'React Router', 'Styled Components', 'Axios']
+				items: [
+					'React 18',
+					'TypeScript',
+					'Redux Toolkit',
+					'React Router',
+					'Styled Components',
+					'Axios'
+				]
 			},
 			{
 				category: 'Backend',
@@ -57,7 +65,8 @@ export const projectDetails: Record<string, ProjectDetail> = {
 			{
 				icon: '💳',
 				title: 'Secure Payments',
-				description: 'Integrated Stripe payment processing with support for multiple payment methods'
+				description:
+					'Integrated Stripe payment processing with support for multiple payment methods'
 			},
 			{
 				icon: '👤',
@@ -83,18 +92,22 @@ export const projectDetails: Record<string, ProjectDetail> = {
 		challenges: [
 			{
 				title: 'Real-time Inventory Management',
-				challenge: 'Ensuring accurate inventory counts when multiple users are shopping simultaneously.',
-				solution: 'Implemented optimistic locking in MongoDB and real-time inventory updates using WebSocket connections.'
+				challenge:
+					'Ensuring accurate inventory counts when multiple users are shopping simultaneously.',
+				solution:
+					'Implemented optimistic locking in MongoDB and real-time inventory updates using WebSocket connections.'
 			},
 			{
 				title: 'Payment Security',
 				challenge: 'Securely handling sensitive payment information.',
-				solution: "Integrated Stripe's secure payment processing, ensuring PCI compliance by never storing card details on our servers."
+				solution:
+					"Integrated Stripe's secure payment processing, ensuring PCI compliance by never storing card details on our servers."
 			},
 			{
 				title: 'Performance Optimization',
 				challenge: 'Loading product catalogs quickly with high-resolution images.',
-				solution: 'Implemented lazy loading, image optimization with Cloudinary, and pagination for large product sets.'
+				solution:
+					'Implemented lazy loading, image optimization with Cloudinary, and pagination for large product sets.'
 			}
 		],
 		lessons: [
@@ -114,6 +127,7 @@ export const projectDetails: Record<string, ProjectDetail> = {
 		github: 'https://github.com/username/taskapp',
 		demo: 'https://taskapp.example.com',
 		slug: 'taskapp',
+		year: 2023,
 		overview: [
 			'This task management application is designed to help teams collaborate effectively on projects. Built with Svelte and Firebase, it provides real-time synchronization across all connected devices, ensuring that team members are always up-to-date with the latest project status.',
 			'The application features an intuitive drag-and-drop interface, customizable project boards, and comprehensive task tracking with due dates, priorities, and team member assignments.'
@@ -121,15 +135,34 @@ export const projectDetails: Record<string, ProjectDetail> = {
 		techStack: [
 			{
 				category: 'Frontend',
-				items: ['Svelte', 'SvelteKit', 'TypeScript', 'CSS3 (Custom Properties)', 'Svelte Stores', 'Svelte Transitions']
+				items: [
+					'Svelte',
+					'SvelteKit',
+					'TypeScript',
+					'CSS3 (Custom Properties)',
+					'Svelte Stores',
+					'Svelte Transitions'
+				]
 			},
 			{
 				category: 'Backend & Database',
-				items: ['Firebase Firestore', 'Firebase Auth', 'Firebase Hosting', 'Cloud Functions', 'Firebase Storage']
+				items: [
+					'Firebase Firestore',
+					'Firebase Auth',
+					'Firebase Hosting',
+					'Cloud Functions',
+					'Firebase Storage'
+				]
 			},
 			{
 				category: 'Features & Libraries',
-				items: ['Real-time Updates', 'Drag & Drop API', 'PWA Support', 'Responsive Design', 'Email Notifications']
+				items: [
+					'Real-time Updates',
+					'Drag & Drop API',
+					'PWA Support',
+					'Responsive Design',
+					'Email Notifications'
+				]
 			}
 		],
 		features: [
@@ -167,23 +200,28 @@ export const projectDetails: Record<string, ProjectDetail> = {
 		challenges: [
 			{
 				title: 'Real-time Synchronization',
-				challenge: 'Ensuring consistent data across multiple users editing simultaneously without conflicts.',
-				solution: "Implemented Firebase Firestore's real-time listeners with optimistic updates and conflict resolution strategies."
+				challenge:
+					'Ensuring consistent data across multiple users editing simultaneously without conflicts.',
+				solution:
+					"Implemented Firebase Firestore's real-time listeners with optimistic updates and conflict resolution strategies."
 			},
 			{
 				title: 'Drag and Drop Performance',
-				challenge: 'Maintaining smooth drag-and-drop interactions while updating the database in real-time.',
-				solution: 'Used local state management with debounced database updates and visual feedback for immediate user response.'
+				challenge:
+					'Maintaining smooth drag-and-drop interactions while updating the database in real-time.',
+				solution:
+					'Used local state management with debounced database updates and visual feedback for immediate user response.'
 			},
 			{
 				title: 'Mobile Responsiveness',
 				challenge: 'Creating a touch-friendly interface that works well on mobile devices.',
-				solution: 'Implemented touch gestures for mobile and redesigned the UI to be mobile-first with larger touch targets.'
+				solution:
+					'Implemented touch gestures for mobile and redesigned the UI to be mobile-first with larger touch targets.'
 			}
 		],
 		lessons: [
 			'<strong>Real-time Applications:</strong> Mastered Firebase Firestore for building responsive, real-time collaborative applications with offline support.',
-			'<strong>Svelte Framework:</strong> Gained deep expertise in Svelte\'s reactive system, stores, and component lifecycle for building efficient web applications.',
+			"<strong>Svelte Framework:</strong> Gained deep expertise in Svelte's reactive system, stores, and component lifecycle for building efficient web applications.",
 			'<strong>State Management:</strong> Learned to handle complex application state across multiple components with proper data flow and updates.',
 			'<strong>User Experience:</strong> Developed skills in creating intuitive interfaces with smooth animations and responsive feedback.',
 			'<strong>Collaborative Features:</strong> Understanding of building features that enable effective team collaboration and communication.'
@@ -198,6 +236,7 @@ export const projectDetails: Record<string, ProjectDetail> = {
 		github: 'https://github.com/username/weather',
 		demo: 'https://weather.example.com',
 		slug: 'weather',
+		year: 2022,
 		overview: [
 			'This weather dashboard provides comprehensive weather information with a clean, modern interface. Users can search for any location worldwide and get detailed current weather conditions, 5-day forecasts, and historical weather patterns displayed through interactive charts.',
 			'The application features automatic location detection, customizable units, and data visualization that helps users understand weather trends at a glance. Built with performance in mind, it provides fast, accurate weather data from multiple reliable sources.'
@@ -205,7 +244,14 @@ export const projectDetails: Record<string, ProjectDetail> = {
 		techStack: [
 			{
 				category: 'Frontend',
-				items: ['Vue.js 3', 'Vue Composition API', 'TypeScript', 'Pinia (State Management)', 'Vue Router', 'Vite']
+				items: [
+					'Vue.js 3',
+					'Vue Composition API',
+					'TypeScript',
+					'Pinia (State Management)',
+					'Vue Router',
+					'Vite'
+				]
 			},
 			{
 				category: 'APIs & Data',
@@ -213,7 +259,13 @@ export const projectDetails: Record<string, ProjectDetail> = {
 			},
 			{
 				category: 'Styling & UX',
-				items: ['CSS3 (Grid & Flexbox)', 'CSS Animations', 'Responsive Design', 'Dark/Light Theme', 'Progressive Web App']
+				items: [
+					'CSS3 (Grid & Flexbox)',
+					'CSS Animations',
+					'Responsive Design',
+					'Dark/Light Theme',
+					'Progressive Web App'
+				]
 			}
 		],
 		features: [
@@ -225,7 +277,7 @@ export const projectDetails: Record<string, ProjectDetail> = {
 			{
 				icon: '📍',
 				title: 'Auto-Detection',
-				description: 'Automatically detect user\'s location for instant weather information'
+				description: "Automatically detect user's location for instant weather information"
 			},
 			{
 				icon: '📊',
@@ -252,23 +304,26 @@ export const projectDetails: Record<string, ProjectDetail> = {
 			{
 				title: 'API Rate Limiting',
 				challenge: 'Managing API calls efficiently while providing real-time data updates.',
-				solution: 'Implemented smart caching with expiration times and batched API requests to minimize calls while keeping data fresh.'
+				solution:
+					'Implemented smart caching with expiration times and batched API requests to minimize calls while keeping data fresh.'
 			},
 			{
 				title: 'Data Visualization Performance',
 				challenge: 'Rendering smooth charts with large datasets without impacting performance.',
-				solution: 'Used Chart.js with data decimation and lazy loading to handle large weather datasets efficiently.'
+				solution:
+					'Used Chart.js with data decimation and lazy loading to handle large weather datasets efficiently.'
 			},
 			{
 				title: 'Geolocation Reliability',
 				challenge: 'Handling cases where geolocation fails or is blocked by users.',
-				solution: 'Implemented fallback location detection using IP-based location services and graceful error handling.'
+				solution:
+					'Implemented fallback location detection using IP-based location services and graceful error handling.'
 			}
 		],
 		lessons: [
 			'<strong>API Integration:</strong> Mastered working with external weather APIs, handling rate limits, and implementing efficient data caching strategies.',
 			'<strong>Data Visualization:</strong> Learned to create meaningful charts and graphs that help users understand complex weather data patterns.',
-			'<strong>Vue.js Ecosystem:</strong> Gained expertise in Vue 3\'s Composition API, Pinia for state management, and building reactive applications.',
+			"<strong>Vue.js Ecosystem:</strong> Gained expertise in Vue 3's Composition API, Pinia for state management, and building reactive applications.",
 			'<strong>Progressive Web Apps:</strong> Implemented PWA features including offline functionality, app installation, and background data sync.',
 			'<strong>User Experience:</strong> Created intuitive interfaces with smooth animations, theme switching, and responsive design principles.',
 			'<strong>Performance Optimization:</strong> Learned techniques for optimizing data-heavy applications with efficient rendering and smart caching.'
@@ -283,6 +338,7 @@ export const projectDetails: Record<string, ProjectDetail> = {
 		github: 'https://github.com/username/portfolio',
 		demo: 'https://portfolio.example.com',
 		slug: 'portfolio',
+		year: 2024,
 		overview: [
 			'This portfolio website serves as a comprehensive showcase of my skills, projects, and experience as a full-stack developer. Built with modern web technologies, it features a clean, responsive design that works seamlessly across all devices.',
 			'The site includes detailed project pages, an interactive skills section, and a contact form with integrated resume download. Every aspect of the design focuses on providing an excellent user experience while demonstrating technical proficiency.'
@@ -294,11 +350,23 @@ export const projectDetails: Record<string, ProjectDetail> = {
 			},
 			{
 				category: 'Styling & Design',
-				items: ['CSS Grid & Flexbox', 'CSS Custom Properties', 'Responsive Design', 'CSS Animations', 'Mobile-First Approach']
+				items: [
+					'CSS Grid & Flexbox',
+					'CSS Custom Properties',
+					'Responsive Design',
+					'CSS Animations',
+					'Mobile-First Approach'
+				]
 			},
 			{
 				category: 'Development & Deployment',
-				items: ['ESLint & Prettier', 'TypeScript', 'Git Version Control', 'Netlify/Vercel', 'Performance Optimization']
+				items: [
+					'ESLint & Prettier',
+					'TypeScript',
+					'Git Version Control',
+					'Netlify/Vercel',
+					'Performance Optimization'
+				]
 			}
 		],
 		features: [
@@ -336,22 +404,26 @@ export const projectDetails: Record<string, ProjectDetail> = {
 		challenges: [
 			{
 				title: 'Performance Optimization',
-				challenge: 'Ensuring fast load times while maintaining rich visual elements and animations.',
-				solution: 'Implemented lazy loading for images, code splitting for routes, and optimized CSS with minimal runtime overhead.'
+				challenge:
+					'Ensuring fast load times while maintaining rich visual elements and animations.',
+				solution:
+					'Implemented lazy loading for images, code splitting for routes, and optimized CSS with minimal runtime overhead.'
 			},
 			{
 				title: 'Cross-Browser Compatibility',
 				challenge: 'Making sure the site works consistently across different browsers and devices.',
-				solution: 'Used modern CSS features with appropriate fallbacks and thorough testing across multiple browsers and devices.'
+				solution:
+					'Used modern CSS features with appropriate fallbacks and thorough testing across multiple browsers and devices.'
 			},
 			{
 				title: 'Accessibility',
 				challenge: 'Creating an accessible experience for users with disabilities.',
-				solution: 'Implemented proper ARIA labels, semantic HTML structure, keyboard navigation, and screen reader compatibility.'
+				solution:
+					'Implemented proper ARIA labels, semantic HTML structure, keyboard navigation, and screen reader compatibility.'
 			}
 		],
 		lessons: [
-			'<strong>SvelteKit Mastery:</strong> Gained deep understanding of SvelteKit\'s routing, server-side rendering, and build optimization features.',
+			"<strong>SvelteKit Mastery:</strong> Gained deep understanding of SvelteKit's routing, server-side rendering, and build optimization features.",
 			'<strong>Modern CSS:</strong> Leveraged advanced CSS features like Grid, Custom Properties, and modern layout techniques for responsive design.',
 			'<strong>Performance Engineering:</strong> Learned to optimize web performance through efficient code organization, image optimization, and smart loading strategies.',
 			'<strong>User Experience Design:</strong> Developed skills in creating intuitive navigation, engaging animations, and professional visual hierarchy.',

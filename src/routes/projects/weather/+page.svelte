@@ -17,14 +17,10 @@
 	<meta name="description" content={project.description} />
 </svelte:head>
 
-<ProjectContent
-	
-	imageSrc={project.image}
-	imageAlt="{project.title} Screenshot"
->
+<ProjectContent imageSrc={project.image} imageAlt="{project.title} Screenshot">
 	<ProjectHero
 		slot="hero"
-		
+		title={project.title}
 		subtitle="A responsive weather dashboard with location-based forecasts and interactive data visualization"
 		demoUrl={project.demo}
 		githubUrl={project.github}
