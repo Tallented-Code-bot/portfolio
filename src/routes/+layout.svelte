@@ -1,6 +1,13 @@
 <script lang="ts">
 	import favicon from '$lib/assets/favicon.svg';
-	import { personalInfo } from '$lib/data/portfolio';
+
+	// Personal info inline
+	const personalInfo = {
+		name: 'Calvin Tallent',
+		title: 'Computer Science Student',
+		bio: 'computer science student at washington state university',
+		location: 'Washington State'
+	};
 
 	let { children } = $props();
 </script>
