@@ -1,0 +1,11 @@
+:root {
+	/* Basic Colors */
+	--color-primary: #007acc;
+	--color-text-primary: #000;
+	--color-text-muted: #666;
+	--color-bg-primary: #fff;
+	--color-border-light: #ddd;
+
+	/* Simple transitions */
+	--transition-normal: 0.3s ease;
+}
