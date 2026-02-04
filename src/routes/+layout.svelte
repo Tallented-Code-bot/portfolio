@@ -4,8 +4,8 @@
 	// Personal info inline
 	const personalInfo = {
 		name: 'Calvin Tallent',
-		title: 'Computer Science Student',
-		bio: 'computer science student at washington state university',
+		title: 'Computer Science Student at Washington State University',
+		bio: 'Computer Science student at Washington State University',
 		location: 'Washington State'
 	};
 

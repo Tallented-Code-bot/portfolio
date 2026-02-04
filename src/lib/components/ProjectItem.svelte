@@ -15,10 +15,10 @@
 	<p class="project-description"><slot /></p>
 	<div class="project-links">
 		{#if github}
-			<a href={github} target="_blank" rel="noopener noreferrer">GitHub</a>
+			<a href={github} target="_blank" rel="noopener noreferrer">See more on GitHub</a>
 		{/if}
 		{#if demo}
-			<a href={demo} target="_blank" rel="noopener noreferrer">Demo</a>
+			<a href={demo} target="_blank" rel="noopener noreferrer">See a demo</a>
 		{/if}
 	</div>
 </li>
