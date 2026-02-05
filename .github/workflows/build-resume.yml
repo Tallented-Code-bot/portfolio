@@ -35,7 +35,7 @@ jobs:
       - name: Copy resume to static directory
         run: |
           mkdir -p static
-          cp resume/build/default/Calvin-Tallent-Resume.pdf static/
+          cp resume/build/Calvin-Tallent-Resume/Calvin-Tallent-Resume.pdf static/
 
       - name: Commit and push if changed
         run: |
