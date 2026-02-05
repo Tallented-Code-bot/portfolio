@@ -1,0 +1,33 @@
+\documentclass[11pt]{resume}
+% \usepackage[margins=1in]{geometry}
+\usepackage{ebgaramond}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage[super]{nth}
+\usepackage{todonotes}
+\usepackage[hidelinks]{hyperref}
+
+\geometry{top=0.35in, left=0.5in, right=0.5in, bottom=0.35in}
+
+
+
+\name{Calvin Tallent}
+% \address{Richland, WA}
+%% \address{(509)-420-9219} %home phone
+\address{\href{tel:5093184467}{(509)-318-4467}} % mobile phone
+\address{\href{mailto:calvin.tallent@wsu.edu}{calvin.tallent@wsu.edu}}
+\address{\href{https://linkedin.com/in/calvin-tallent}{linkedin.com/in/calvin-tallent}}
+% \address{\href{https://github.com/Tallented-Code-bot}{github.com/Tallented-Code-bot}}
+
+
+\linespread{0.950} 
+
+% from https://tex.stackexchange.com/questions/170525/itemize-left-margin
+\newlist{mylist}{itemize}{3}
+\setlist[mylist]{nosep}
+\setlist[mylist,1]{label=,leftmargin=0em,font=\bfseries,before=\bfseries}
+\setlist[mylist,2]{label=\textbullet,leftmargin=1em,font=\normalfont,before=\normalfont}
+\setlist[mylist,3]{label=\textbullet,leftmargin=2em,font=\normalfont,before=\normalfont}
+
+
+\begin{document}

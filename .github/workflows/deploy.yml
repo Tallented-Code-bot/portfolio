@@ -25,6 +25,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Install Tectonic
+        uses: wtfjoke/setup-tectonic@v3
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build resume with Tectonic
+        run: |
+          cd resume
+          tectonic -X build
+          cd ..
+          mkdir -p static
+          cp resume/build/Calvin-Tallent-Resume/Calvin-Tallent-Resume.pdf static/
+
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
