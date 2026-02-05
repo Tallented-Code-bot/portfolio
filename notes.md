@@ -1,13 +1,19 @@
 # title
 
 - GPS to track data for Wazzu Racing (2025)
+  - On resume
 - Wazzu Racing website (2025)
+  - On resume
 - Project for Crimson Game Jam (2025)
-<!--- Tolkien Geneology-->
+- Planetarium game (2025)
+  - On resume
+- Tolkien Geneology
 - Perlin images rs (what did I accomplish)
 - Hyprland flee bravely (dec 2024, https://github.com/tallented-Code-bot/hyprland-flee-bravely)
 - Rusty scratch (2022-2025)
+  - On resume
 - RHS robotics ()
+  - On resume
 - APCS final project ()
 - JD tool
 - Density calculator ()
