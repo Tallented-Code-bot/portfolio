@@ -69,6 +69,7 @@
 \let \@addressone \relax
 \let \@addresstwo \relax
 \let \@addressthree \relax
+\let \@addressfour \relax
 
 % The \address command is used to set the first, second and third address lines (the last 2 are optional)
 \newcommand{\address}[1]{
@@ -77,8 +78,14 @@
 	}{
 		\@ifundefined{@addresstwo}{ % If the second address line has not been set yet, set it
 			\def \@addresstwo {#1}
-		}{ % Otherwise, set the third address line
-			\def \@addressthree {#1}
+		}{
+		    \@ifundefined{@addressthree}{ % If the third address line has not been set yet, set it
+				\def \@addressthree {#1}
+			}{
+    			% Otherwise, set the fourth address line
+    			\def \@addressfour {#1}
+			}
+
 		}%
 	}
 }
@@ -111,7 +118,8 @@
 	\printname % Output the user's name
 	\@ifundefined{@addressone}{}{\centering\printaddress{\@addressone}\hspace{0.1cm}$\diamondsuit$} % Output the first address if specified
 	\@ifundefined{@addresstwo}{}{\centering\printaddress{\@addresstwo}\hspace{0.1cm}$\diamondsuit$} % Output the second address if specified
-	\@ifundefined{@addressthree}{}{\centering\printaddress{\@addressthree}} % Output the third address if specified
+	\@ifundefined{@addressthree}{}{\centering\printaddress{\@addressthree}\hspace{0.1cm}$\diamondsuit$} % Output the second address if specified
+	\@ifundefined{@addressfour}{}{\centering\printaddress{\@addressfour}} % Output the third address if specified
 }
 
 %----------------------------------------------------------------------------------------
