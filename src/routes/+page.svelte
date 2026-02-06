@@ -129,7 +129,7 @@
 						</p>
 						<p>
 							Partially due to the autonomous code, we teamed up with Kamiakin High School, and
-							ended up winning the tournamnet together!
+							ended up winning the tournament together!
 						</p>
 					</ProjectItem>
 				</ul>

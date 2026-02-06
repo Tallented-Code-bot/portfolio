@@ -9,6 +9,8 @@
 		location: 'Washington State'
 	};
 
+	const year = new Date().getFullYear();
+
 	let { children } = $props();
 </script>
 
@@ -38,7 +40,7 @@
 
 <footer class="footer">
 	<div class="container">
-		<p>&copy; 2025 {personalInfo.name}</p>
+		<p>&copy; {year} {personalInfo.name}</p>
 	</div>
 </footer>
 
