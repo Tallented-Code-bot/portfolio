@@ -1,5 +1,6 @@
 <script lang="ts">
 	import favicon from '$lib/assets/favicon.svg';
+	import { asset } from '$app/paths';
 
 	// Personal info inline
 	const personalInfo = {
@@ -30,6 +31,10 @@
 				<a href="https://linkedin.com/in/calvin-tallent" target="_blank" rel="noopener noreferrer"
 					>linkedin</a
 				>–
+				<a href={asset('/Calvin-Tallent-Resume.pdf')} target="_blank" rel="noopener noreferrer"
+					>resume</a
+				>
+				–
 				<a href="mailto:calvin.tallent@wsu.edu">email</a>
 			</div>
 		</div>

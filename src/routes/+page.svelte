@@ -16,7 +16,7 @@
 		</p>
 
 		<p>
-			I enjoy many areas of computer science, incuding robotics, full-stack development, embedded
+			I enjoy many areas of computer science, including robotics, full-stack development, embedded
 			programming, and game development. Currently I'm an active member of Wazzu Racing, a Formula
 			SAE team that builds a race car each year in competition with universities from around the
 			world. I'm also a member of the ACM, and I participate in Game Development Club at WSU.
@@ -46,6 +46,31 @@
 		</p> -->
 	</section>
 
+	<section id="education" class="resume-section">
+		<h2>Education</h2>
+		<h3>Washington State University</h3>
+		<p>Computer Science (B.S.), Honors College Scholar &mdash; May 2028 (expected)</p>
+		<p>
+			<strong>Relevant coursework:</strong> Advanced Data Structures, Automata and Formal Languages, Object-Oriented
+			Principles, Data Mining
+		</p>
+
+		<p><strong>Richland High School / Columbia Basin College:</strong> Dual credit (~60 credits)</p>
+	</section>
+
+	<section id="awards" class="resume-section">
+		<h2>Awards / Achievements</h2>
+		<p>
+			Washington State Opportunity Scholar (2025&ndash;), National Merit Commended Student (2024),
+			National Honor Society (2023&ndash;2025)
+		</p>
+	</section>
+
+	<section id="leadership" class="resume-section">
+		<h2>Leadership / Activities</h2>
+		<p>FCA Soccer referee (2022&ndash;2025); CBC Game Development Club VP/Secretary (2025)</p>
+	</section>
+
 	<section id="projects" class="projects">
 		<h2>Projects</h2>
 
@@ -59,10 +84,36 @@
 						demo=""
 					>
 						This is a program I wrote for Wazzu Racing that takes the raw GPS coordinates from the
-						car telemetry logs, extracts usuable segments of data, and fits arcs to the points to
+						car telemetry logs, extracts usable segments of data, and fits arcs to the points to
 						construct a track. The generated track can then be used to validate our lap simulator.
 						It turns out that both our GPS data and acceleration data from the IMU is unreliable, so
 						it was a challenge to select only the useful data.
+					</ProjectItem>
+
+					<ProjectItem title="Scratch to Rust Compiler">
+						<ul>
+							<li>
+								Implemented a compiler to convert Scratch blocks into Rust, increasing performance
+								dramatically
+							</li>
+							<li>Includes support for concurrent execution of many Scratch threads at once</li>
+							<li>Includes a Rust implementation of the Scratch standard library</li>
+							<li>Uses the Scratch API to download specific projects for compilation</li>
+						</ul>
+					</ProjectItem>
+
+					<ProjectItem title="CBC Planetarium Space Game">
+						<ul>
+							<li>
+								Worked with students from CBC Game Development Club and Esports team to produce a
+								game compatible with the planetarium
+							</li>
+							<li>
+								Uses CBC's planetarium to provide an immersive experience not possible with
+								traditional hardware
+							</li>
+							<li>Overcame performance challenges imposed by the planetarium's high resolution</li>
+						</ul>
 					</ProjectItem>
 
 					<ProjectItem
@@ -76,7 +127,6 @@
 							>wazzuracing.vcea.wsu.edu</a
 						>.
 					</ProjectItem>
-					<ProjectItem title="" github="" demo=""></ProjectItem>
 				</ul>
 			</div>
 			<div class="year-section">
@@ -167,6 +217,32 @@
 
 	.projects {
 		padding: 2rem 0;
+	}
+
+	.resume-section {
+		padding: 1.5rem 0;
+		border-bottom: 1px solid var(--color-border-light);
+	}
+
+	.resume-section h3 {
+		font-size: 1.1rem;
+		margin: 1rem 0 0.25rem;
+		font-weight: 600;
+	}
+
+	.resume-section p {
+		margin: 0.25rem 0 0.75rem;
+		color: var(--color-text-muted);
+	}
+
+	.resume-section ul {
+		margin: 0.25rem 0 0.75rem 1.25rem;
+		padding: 0;
+		color: var(--color-text-muted);
+	}
+
+	.resume-section li {
+		margin: 0.2rem 0;
 	}
 
 	.year-section {

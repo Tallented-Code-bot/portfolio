@@ -19,8 +19,6 @@
 - Density calculator ()
 - physics engine (2021) (https://github.com/Tallented-Code-bot/physics)
 
-
-
 2024-2025 senior
 2023-2024 junior
 2022-2023 sophomore
